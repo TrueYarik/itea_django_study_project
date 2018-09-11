@@ -1,0 +1,11 @@
+{% extends "university/base.html" %}
+{% block title %}
+Study project's Main Page
+{% endblock %}
+
+{% block content %}
+<h1>You are on the Main Page</h1>
+<h2>Follow the links bellow to navigate through project</h2>
+<p><a href="{% url 'add_student' %}"> The form to create STUDENT</a></p>
+<p><a href="{% url 'add_teacher' %}"> The form to create TEACHER</a></p>
+{%  endblock %}

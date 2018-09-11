@@ -1,0 +1,10 @@
+{% extends "university/base.html" %}
+{% load static %}
+{% block content %}
+<h1>Login Form</h1>
+<form method="POST" class="post-form">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Create">
+</form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "university/base.html" %}
+{% block title %}
+Person creating forms: student and teacher
+{% endblock %}
+
+{% block content %}
+<h1>Fill the following forms to add student</h1>
+
+{% if messages %}
+    {% for m in messages %}
+        {{ m }}
+    {% endfor %}
+<p><a href="{% url 'add_student' %}"> Wanna add another student?</a> </p>
+<p><a href="{% url 'index' %}"> Back to the Main Page</a> </p>
+{% else %}
+<form action="/add_student/" method="POST" >
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="fieldWrapper">
+            {{ field.errors }}
+            {{ field.label_tag }} {{ field }}
+        </div>
+    {% endfor %}
+    <input type="submit" value="Create">
+</form>
+{% endif %}
+{%  endblock %}
