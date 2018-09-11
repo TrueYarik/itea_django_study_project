@@ -1,6 +1,6 @@
 Study project
 ===========
-I was developing this project in August-September of 2018 after I enrolled to Django course at ITEA (IT education Academy)
+I developed this project in August-September 2018 as I was studing at ITEA (IT education Academy)
 ---
 
 Author
