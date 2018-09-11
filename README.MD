@@ -17,13 +17,11 @@ Or phone me:
 
 Project description
 ---
-My final simple project on Django, which I seb-by-step develop as studied at ITEA.
-Project consists of two simple forms to add student or teacher data into database.
+My  simple project on Django, which I step-by-step develop as studied at ITEA.  
+Project consists of two simple forms to add student or teacher data into database. 
 Also it has main page with two links leading to these forms. 
-If all form's fields filled correctly, data will right away will be commited into the database,
-otherwise in top of respectible field will appear validation error 
-with a message of how to change input to let it further be processed.
-Form functionality as well as validation functions are covred up with unit-tests.
+If all form's fields filled correctly, data will right away will be committed into the database, otherwise in top of respective field will appear validation error with a message of how to change input to let it further be processed.  
+Form functionality as well as validation functions are covered up with unit-tests.  
 
 
 
